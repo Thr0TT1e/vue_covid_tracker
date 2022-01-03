@@ -1,4 +1,13 @@
-# vue_covid-19_tracker
+# Vue.js COVID-19 Tracker
+
+Проект использует:
+1. Tailwind CSS
+2. covid19api.com
+3. Moment.js
+
+
+
+---
 
 ## Project setup
 ```
