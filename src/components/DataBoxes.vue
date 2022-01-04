@@ -27,7 +27,6 @@
         {{ stats.TotalDeaths.toLocaleString() }}
       </div>
     </div>
-    {{ stats }}
   </div>
 </template>
 
@@ -35,7 +34,7 @@
 export default {
   name: 'DataBoxes',
   
-  props: ['stats']
+  props: ['stats'],
 }
 </script>
 
