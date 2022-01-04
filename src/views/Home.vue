@@ -1,6 +1,6 @@
 <template>
   <main v-if="!loading">
-    Show data
+    <DataTitle :text="title" :dataDate="dataDate" />
   </main>
   
   <main
@@ -14,6 +14,7 @@
 </template>
 
 <script>
+import DataTitle from '@/components/DataTitle.vue';
 
 export default {
   name: 'Home',
@@ -30,6 +31,7 @@ export default {
   },
   
   components: {
+    DataTitle
   },
   
   methods: {
@@ -49,7 +51,7 @@ export default {
     this.dataDate = data.Date
     this.stats = data.Global
     this.countries = data.Countries
-    // this.loading = false
+    this.loading = false
   }
 }
 </script>
