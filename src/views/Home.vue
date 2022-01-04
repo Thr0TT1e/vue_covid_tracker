@@ -54,10 +54,7 @@ export default {
   
   methods: {
     async fetchCovidData() {
-      const res = await fetch('/summary', {
-        method:   'GET',
-        redirect: 'follow',
-      })
+      const res  = await fetch('https://api.covid19api.com/summary')
       
       return await res.json()
     },
