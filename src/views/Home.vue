@@ -1,6 +1,8 @@
 <template>
   <main v-if="!loading">
     <DataTitle :text="title" :dataDate="dataDate" />
+    
+    <DataBoxes :stats="stats"/>
   </main>
   
   <main
@@ -15,6 +17,7 @@
 
 <script>
 import DataTitle from '@/components/DataTitle.vue';
+import DataBoxes from '@/components/DataBoxes.vue';
 
 export default {
   name: 'Home',
@@ -31,7 +34,8 @@ export default {
   },
   
   components: {
-    DataTitle
+    DataTitle,
+    DataBoxes,
   },
   
   methods: {
